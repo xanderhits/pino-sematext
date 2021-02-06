@@ -10,5 +10,8 @@
   "license": "MIT",
   "peerDependencies": {
     "pino": "6.x"
-  } 
+  },
+  "devDependencies": {
+    "minimist": "^1.2.5"
+  }
 }
