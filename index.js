@@ -6,7 +6,9 @@ const split = require('split2')
 const through = require('through2')
 const Logsene = require('logsene-js')
 
-const lsLogger = new Logsene()
+const token = 'foo' // get token arg
+
+const lsLogger = new Logsene(token)
 const levels = pino.levels.labels
 
 function safeParse (src) {
