@@ -1,0 +1,14 @@
+{
+  "name": "@beyonk/pino-sematext",
+  "version": "0.0.0",
+  "description": "Sematext transport for Pino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antony Jones",
+  "license": "MIT",
+  "peerDependencies": {
+    "pino": "6.x"
+  } 
+}
