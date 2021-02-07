@@ -5,9 +5,8 @@ const pump = require('pump')
 const split = require('split2')
 const through = require('through2')
 const Logsene = require('logsene-js')
-const minimist = require('minimist')
+const { token } = require('./config.js')
 
-const { token } = minimist(process.argv.slice(2))
 const lsLogger = new Logsene(token)
 const levels = Pino.levels.labels
 
