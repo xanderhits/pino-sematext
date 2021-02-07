@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const pino = require('pino')
+const Pino = require('pino')
 const pump = require('pump')
 const split = require('split2')
 const through = require('through2')
@@ -9,7 +9,7 @@ const minimist = require('minimist')
 
 const { token } = minimist(process.argv.slice(2))
 const lsLogger = new Logsene(token)
-const levels = pino.levels.labels
+const levels = Pino.levels.labels
 
 function safeParse (src) {
   try {
