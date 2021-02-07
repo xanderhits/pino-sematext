@@ -21,6 +21,14 @@ $ pnpm install --production -g @beyonk/pino-sematext
 
 *@beyonk/pino-sematext* only supports a single config option, `token` which is your sematext (or compatible) api token.
 
+You can also specify this in your pacakge.json:
+
+```json
+"pino-sematext": {
+  "token": "Your token here"
+}
+```
+
 ## License
 
-[MIT License](http://jsumners.mit-license.org/)
+[MIT License](https://antony.mit-license.org/)
