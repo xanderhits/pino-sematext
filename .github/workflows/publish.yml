@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      with:
-        ref: github.ref
+        with:
+          ref: github.ref
       - uses: actions/setup-node@v1
         with:
           node-version: 12
