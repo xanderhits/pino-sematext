@@ -12,6 +12,13 @@
   "peerDependencies": {
     "pino": "^6.11.0"
   },
+  "tags": [
+    "sematext",
+    "logsene",
+    "pino",
+    "pino-transport",
+    "beyonk"
+  ],
   "bin": {
     "pino-sematext": "index.js"
   },
