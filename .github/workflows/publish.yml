@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npx pnpm ci
+      - run: npx pnpm install -P
       - run: npx pnpm run lint
 
   publish-npm:
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npx pnpm ci
+      - run: npx pnpm install -P
       - run: npx pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
