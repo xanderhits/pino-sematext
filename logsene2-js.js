@@ -525,6 +525,7 @@ Logsene.prototype.send = function (callback) {
           req.destroy()
         }
       } else {
+        console.dir(res.body)
         res.body.items.forEach(function (item) {
           var result = item.index || item.create || item.update || item.delete
           if (result && result.status > 399) {
