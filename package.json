@@ -23,7 +23,11 @@
     "pino-sematext": "index.js"
   },
   "dependencies": {
-    "minimist": "^1.2.5"
+    "logsene-js": "^1.1.74",
+    "minimist": "^1.2.5",
+    "pump": "^3.0.0",
+    "split2": "^3.2.2",
+    "through2": "^4.0.2"
   },
   "volta": {
     "node": "12.20.1"
