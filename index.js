@@ -14,7 +14,7 @@ function safeParse (src) {
   try {
     return JSON.parse(src)
   } catch (error) {
-    lsLogger.log('error', 'unparseable log message', { error, original: src })
+    lsLogger.log('error', 'unparseable log message', { message: error.message, original: src })
   }
 }
 
