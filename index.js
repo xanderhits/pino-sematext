@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const Pino = require('pino')
-const { err } = require('pino-std-serializers')
 const pump = require('pump')
 const split = require('split2')
 const through = require('through2')
@@ -15,7 +14,7 @@ function safeParse (src) {
   try {
     return JSON.parse(src)
   } catch (error) {
-    lsLogger.log('error', 'unparseable log message', { error: err(error), original: src })
+    lsLogger.log('error', 'unparseable log message', { error, original: src })
   }
 }
 
