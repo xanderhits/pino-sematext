@@ -4,7 +4,7 @@
   "description": "Sematext transport for Pino",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha *.spec.js --token foo",
     "lint": "eslint ."
   },
   "author": "Antony Jones",
@@ -34,7 +34,10 @@
   },
   "devDependencies": {
     "@beyonk/eslint-config": "^5.0.2",
-    "eslint": "^7.19.0"
+    "@hapi/code": "^8.0.3",
+    "eslint": "^7.19.0",
+    "mocha": "^9.0.1",
+    "sinon": "^11.1.1"
   },
   "eslintConfig": {
     "extends": "@beyonk"
