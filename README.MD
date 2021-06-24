@@ -9,6 +9,14 @@ For example:
 $ node your-app.js | pino-sematext --token my-api-token
 ```
 
+## Demo
+
+You can test the integration by running the demo:
+
+```
+$ npm run demo -- --token <my-api-token>
+```
+
 ## Install
 
 You should install *pino-syslog* globally so that it can be used as a utility:

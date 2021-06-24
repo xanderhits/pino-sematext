@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha *.spec.js --token foo",
+    "demo": "node test.js | node index.js",
     "lint": "eslint ."
   },
   "author": "Antony Jones",
   "license": "MIT",
   "peerDependencies": {
-    "pino": "^6.11.0"
+    "pino": "^6.11.3"
   },
   "tags": [
     "sematext",
@@ -37,6 +38,7 @@
     "@hapi/code": "^8.0.3",
     "eslint": "^7.19.0",
     "mocha": "^9.0.1",
+    "pino": "*",
     "sinon": "^11.1.1"
   },
   "eslintConfig": {
