@@ -8,7 +8,7 @@ function safeParse (src) {
   try {
     return JSON.parse(src)
   } catch (error) {
-    logger.log('error', 'unparseable log message', { message: error.message, original: src })
+    logger.log('error', 'unparseable log message', { exception: error.message, original: JSON.stringify(src) })
   }
 }
 
