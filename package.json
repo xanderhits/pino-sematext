@@ -42,6 +42,13 @@
     "sinon": "^11.1.1"
   },
   "eslintConfig": {
-    "extends": "@beyonk"
+    "extends": "@beyonk",
+    "globals": {
+      "describe": true,
+      "context": true,
+      "beforeEach": true,
+      "afterEach": true,
+      "it": true
+    }
   }
 }
