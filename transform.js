@@ -5,16 +5,20 @@ const levels = Pino.levels.labels
 const logger = require('./logger.js')
 
 function safeParse (src) {
+  console.log(src)
+
   try {
     return JSON.parse(src)
   } catch (error) {
-    logger.log('error', 'unparseable log message', { exception: error.message, original: JSON.stringify(src) })
+    // Do nothing at this point.
+    // console.log('[skipped] ', src) 
+    // { exception: error.message, original: JSON.stringify(src) }
   }
 }
 
 function handleLog (log, cb) {
   const { level, time, pid, hostname, msg = '', ...params } = log
-  logger.log(levels[level] || 'info', msg, { ...params, pid, hostname })
+  logger.log(levels[level] || 'info', msg, { ...params, pid, hostname, '@timestamp': time })
   cb()
 }
 
