@@ -5,7 +5,7 @@ const levels = Pino.levels.labels
 const logger = require('./logger.js')
 
 function safeParse (src) {
-  console.log(src)
+  // console.log(src)
 
   try {
     return JSON.parse(src)

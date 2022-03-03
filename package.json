@@ -1,6 +1,6 @@
 {
   "name": "@beyonk/pino-sematext",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Sematext transport for Pino",
   "main": "index.js",
   "scripts": {
